@@ -1,0 +1,103 @@
+/* Project Done By Vaitheesh Murugavel (LinkedIn) */
+/* Project Done By vaitheeshm (GitHub)  */
+:root {
+    --blue_color: rgb(68, 188, 244);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-image: url(cloud.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.logo .hub {
+    color: var(--blue_color);
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.116);
+    font-size: 23px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .menu-line .line{
+    height: 4px;
+    width: 20px;
+    background-color: white;
+    margin-bottom: 3px;
+    border-radius: 30px;
+    margin-right: 30px;
+    
+}
+.menu-line{
+    cursor: pointer;
+    margin-top: 6px;
+    display: none;
+}
+.line:hover{
+    color: var(--blue_color);
+}
+
+ul {
+    position: absolute;
+    right: 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+li a {
+    color: white;
+}
+
+li a:hover {
+    color: var(--blue_color);
+}
+
+@media screen and (max-width:700px) {
+   .menu{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.396);
+   }
+   li{
+    display: block;
+    margin: 10px;
+   }
+   ul{
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+   }
+   .menu .menu-line{
+        display: block;
+        position: absolute;  
+        right: 10px;
+        top: 15px;
+        margin-bottom: 30px;
+    }
+    .showmenu{
+        display: block;
+    }
+}
+ 
